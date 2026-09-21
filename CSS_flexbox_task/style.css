@@ -1,0 +1,81 @@
+/* * univeral selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eeeeee;
+}
+/*used display flex for header*/
+.header {
+    height: 90px;
+    background-color: #5c043d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+/* Logo */
+.logo {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+/*used flex for navbar*/
+.navbar {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+}
+/*used flex for align cards and sidebar */
+.main-container {
+    display: flex;
+    height: 700px;
+}
+/* used flex basis,direction for sidebar*/
+.sidebar {
+    background-color: #384963;
+    flex-basis: 400px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 50px 28px;
+}
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+/*cards used flex grow*/
+.content {
+    flex-grow: 1;
+    padding: 43px;
+}
+/*display flex wrap */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+/* card */
+.card {
+    height: 206px;
+    flex-basis: 250px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    background-color: #d94e57;
+    border-radius: 17px;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

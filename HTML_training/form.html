@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <!--day2 02-09-2026 html form-->
+    <h1>Universal Registration & Management Form</h1>
+    <hr>
+    <form action="submit">
+        <!--Personal details-->
+        <fieldset>
+            <legend><h2>Personal Details</h2></legend>
+
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required>
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone">
+            <br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob">
+            <br><br>
+
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+            <br><br>
+
+            <label for="marital">Marital Status:</label>
+            <select id="marital" name="marital">
+                <option value="">--Select--</option>
+                <option value="single">Single</option>
+                <option value="married">Married</option>
+                <option value="divorced">Divorced</option>
+            </select>
+
+        </fieldset>
+
+        <br>
+        <!-- Education Details -->
+        <fieldset>
+            <legend><h2>Education Details</h2></legend>
+
+            <label for="qualification">Highest Qualification:</label>
+            <select id="qualification" name="qualification">
+                <option value="">--Select Qualification--</option>
+                <option value="10th">10th</option>
+                <option value="12th">12th</option>
+                <option value="diploma">Diploma</option>
+                <option value="graduation">Graduation</option>
+                <option value="postgraduation">Post Graduation</option>
+            </select>
+            <br><br>
+
+            <label for="college">College Name:</label>
+            <input type="text" id="college" name="college">
+            <br><br>
+
+            <label for="passing">Year of Passing:</label>
+            <input type="number" id="passing" name="passing">
+            <br><br>
+
+            <label for="percentage">Percentage:</label>
+            <input type="number" id="percentage" name="percentage">
+            
+        </fieldset>
+
+        <br>
+        <!-- Professional Details -->
+        <fieldset>
+            <legend><h2>Professional Details</h2></legend>
+
+            <label for="experience">Experience (Years):</label>
+            <input type="number" id="experience" name="experience">
+            <br><br>
+
+            <label>Skills:</label>
+
+            <input type="checkbox" id="html" name="skills" value="HTML">
+            <label for="html">HTML</label>
+
+            <input type="checkbox" id="css" name="skills" value="CSS">
+            <label for="css">CSS</label>
+
+            <input type="checkbox" id="javascript" name="skills" value="JavaScript">
+            <label for="javascript">JavaScript</label>
+
+            <input type="checkbox" id="python" name="skills" value="Python">
+            <label for="python">Python</label>
+
+            <input type="checkbox" id="react" name="skills" value="React">
+            <label for="react">React</label>
+            <br><br>
+
+            <label for="company">Current Company:</label>
+            <input type="text" id="company" name="company">
+            <br><br>
+
+            <label for="salary">Expected Salary:</label>
+            <input type="text" id="salary" name="salary">
+
+        </fieldset>
+
+        <br>
+
+        <!-- Account Setup -->
+        <fieldset>
+            <legend><h2>Account Setup</h2></legend>
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username">
+            <br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br><br>
+
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+            <br><br>
+
+            <label for="security">Security Question:</label>
+            <select id="security" name="security">
+                <option value="name">Your Pet Name?</option>
+                <option value="school">Your School Name?</option>
+                <option value="city">Your Birth City?</option>
+                <option value="friend">Your Best Friend's Name?</option>
+            </select>
+            <br><br>
+
+            <label for="answer">Answer:</label>
+            <input type="text" id="answer" name="answer">
+
+        </fieldset>
+
+        <br>
+        <!-- Address Details -->
+        <fieldset>
+            <legend><h2>Address Details</h2></legend>
+
+            <label for="address">Address Line:</label>
+            <br>
+            <textarea id="address" name="address" rows="4" cols="30"></textarea>
+            <br><br>
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city">
+            <br><br>
+
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state">
+            <br><br>
+
+            <label for="pincode">Pincode:</label>
+            <input type="text" id="pincode" name="pincode">
+            <br><br>
+
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country">
+
+        </fieldset>
+
+        <br>
+
+        <!-- Emergency Contact -->
+        <fieldset>
+            <legend><h2>Emergency Contact</h2></legend>
+
+            <label for="contactName">Contact Person Name:</label>
+            <input type="text" id="contactName" name="contactName">
+            <br><br>
+
+            <label for="relationship">Relationship:</label>
+            <input type="text" id="relationship" name="relationship">
+            <br><br>
+
+            <label for="emergencyPhone">Emergency Phone:</label>
+            <input type="tel" id="emergencyPhone" name="emergencyPhone">
+
+        </fieldset>
+
+        <br>
+
+        <!-- Upload Documents -->
+        <fieldset>
+            <legend><h2>Upload Documents</h2></legend>
+
+            <label for="resume">Upload Resume:</label>
+            <input type="file" id="resume" name="resume">
+            <br><br>
+
+            <label for="photo">Upload Profile Photo:</label>
+            <input type="file" id="photo" name="photo">
+
+        </fieldset>
+
+        <br>
+
+        <!-- Declaration -->
+        <fieldset>
+            <legend><h2>Declaration</h2></legend>
+
+            <input type="checkbox" id="declaration" name="declaration">
+            <label for="declaration">
+                I hereby declare that the above information is true and correct.
+            </label>
+
+        </fieldset>
+
+        <br>
+
+        <button type="submit">Submit Registration</button>
+        <button type="reset">Reset Form</button>
+    </form>
+</body>
+</html>

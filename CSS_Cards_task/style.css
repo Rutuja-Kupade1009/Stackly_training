@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+/* Product Card */
+.productCard {
+    width: 350px;
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.20);
+    transition: box-shadow 0.4s ease-in-out;
+}
+/* Card Hover */
+.productCard:hover {
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+/* Image Container */
+.imageContainer {
+    width: 310px;
+    height: 280px;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #fafafa;
+}
+/* Product Image */
+.imageContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.4s ease-in-out;
+}
+/* Image Zoom on Hover */
+.imageContainer img:hover {
+    transform: scale(1.08);
+}
+/* Product Name */
+.productCard h2 {
+    margin-top: 18px;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+/* Price */
+.price {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+/* Buy Now Button */
+button {
+    padding: 12px 28px;
+    border: none;
+    border-radius: 6px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease-in-out;
+}
+
+
+/* Button Hover */
+button:hover {
+    background-color: orange;
+    color: black;
+    transform: translateY(-4px);
+}
